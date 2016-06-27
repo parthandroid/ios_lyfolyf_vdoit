@@ -24,7 +24,7 @@ class Login: UIViewController {
     
     
     // for the time being
-    if username_field.text == "part" && password_field.text == "parth"{
+    if username_field.text == "parth" && password_field.text == "parth"{
     
     performSegueWithIdentifier("login", sender: nil)
       
