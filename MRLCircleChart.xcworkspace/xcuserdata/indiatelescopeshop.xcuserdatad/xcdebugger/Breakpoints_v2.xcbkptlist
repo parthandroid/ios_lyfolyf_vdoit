@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Source/ChartView.swift"
+            timestampString = "488564439.312558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
+            landmarkName = "select(index:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MRLCircleChart/UnderDateView.swift"
+            timestampString = "488569259.417327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MRLCircleChart/ViewController.swift"
+            timestampString = "488579510.832659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "setupData_forcast()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MRLCircleChart/ViewController.swift"
+            timestampString = "488579381.797975"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MRLCircleChart_Example.ViewController.dataSource_forcast.getter : MRLCircleChart_Example.DataSource"
+                  moduleName = "MRLCircleChart_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/ViewController.swift"
+                  timestampString = "488579382.691342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MRLCircleChart_Example.ViewController.dataSource_forcast.setter : MRLCircleChart_Example.DataSource"
+                  moduleName = "MRLCircleChart_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/ViewController.swift"
+                  timestampString = "488579382.693015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MRLCircleChart_Example.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; MRLCircleChart_Example.ViewController"
+                  moduleName = "MRLCircleChart_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/ViewController.swift"
+                  timestampString = "488579382.693232"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "243">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MRLCircleChart_Example.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MRLCircleChart_Example.ViewController&gt;"
+                  moduleName = "MRLCircleChart_Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/ViewController.swift"
+                  timestampString = "488579382.693424"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "166">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
