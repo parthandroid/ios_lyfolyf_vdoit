@@ -3,10 +3,14 @@ use_frameworks!
 
 target 'MRLCircleChart_Example' do
   pod 'MRLCircleChart', path: '../'
+  pod 'Canvas'
+  pod 'LiquidFloatingActionButton', :git => 'https://github.com/yoavlt/LiquidFloatingActionButton.git', :branch => 'swift-2.0'
 end
 
 target 'MRLCircleChart_Tests' do
   pod 'MRLCircleChart', path: '../'
+  pod 'Canvas'
+ 
 end
 
 post_install do |installer|

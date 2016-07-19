@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C34BAAB1D38017C0080D574 /* InnerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAA1D38017C0080D574 /* InnerCircle.swift */; };
+		3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */; };
+		3C34BAAF1D3931780080D574 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAE1D3931780080D574 /* Test.swift */; };
+		3C34BAB11D3A5DB90080D574 /* InnerFriendsTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */; };
 		3C6C4E101D217C330009A444 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C4E0F1D217C330009A444 /* Login.swift */; };
 		3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */; };
 		3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */; };
+		3CFE8DC11D32142800C02D1F /* MyTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE8DC01D32142800C02D1F /* MyTimeline.swift */; };
+		3CFE8DC31D34C66A00C02D1F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */; };
 		50863DE477E75E1AEC40FD16 /* Pods_MRLCircleChart_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA082CA3BCFC7A6AAA7A9C /* Pods_MRLCircleChart_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -32,9 +38,15 @@
 /* Begin PBXFileReference section */
 		20176FC6077E2A6D47867179 /* Pods-MRLCircleChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLCircleChart_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRLCircleChart_Example/Pods-MRLCircleChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36AC3325E3CE16BA50CF76CF /* Pods-MRLCircleChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLCircleChart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRLCircleChart_Example/Pods-MRLCircleChart_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C34BAAA1D38017C0080D574 /* InnerCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerCircle.swift; sourceTree = "<group>"; };
+		3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		3C34BAAE1D3931780080D574 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerFriendsTimeline.swift; sourceTree = "<group>"; };
 		3C6C4E0F1D217C330009A444 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderDateView.swift; sourceTree = "<group>"; };
+		3CFE8DC01D32142800C02D1F /* MyTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimeline.swift; sourceTree = "<group>"; };
+		3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		52FB9CBA5AC8C99D4F4C55CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MRLCircleChart_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRLCircleChart_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +94,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3C34BAA91D3800E20080D574 /* TabBarClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3CFE8DC01D32142800C02D1F /* MyTimeline.swift */,
+				3C34BAAA1D38017C0080D574 /* InnerCircle.swift */,
+				3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */,
+			);
+			name = TabBarClasses;
+			sourceTree = "<group>";
+		};
 		3C6C4E0E1D217BF30009A444 /* login & signUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +115,10 @@
 		3C985BFC1D1EF40900E8541C /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */,
 				3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */,
 				3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */,
+				3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */,
 			);
 			name = CustomClasses;
 			sourceTree = "<group>";
@@ -125,6 +149,7 @@
 		607FACD21AFB9204008FA782 /* Example for MRLCircleChart */ = {
 			isa = PBXGroup;
 			children = (
+				3C34BAA91D3800E20080D574 /* TabBarClasses */,
 				3C6C4E0E1D217BF30009A444 /* login & signUp */,
 				3C985BFC1D1EF40900E8541C /* CustomClasses */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -133,6 +158,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				3C34BAAE1D3931780080D574 /* Test.swift */,
 			);
 			name = "Example for MRLCircleChart";
 			path = MRLCircleChart;
@@ -385,9 +411,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3CFE8DC31D34C66A00C02D1F /* CustomTabBarController.swift in Sources */,
+				3C34BAAB1D38017C0080D574 /* InnerCircle.swift in Sources */,
+				3CFE8DC11D32142800C02D1F /* MyTimeline.swift in Sources */,
 				3C6C4E101D217C330009A444 /* Login.swift in Sources */,
 				3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */,
+				3C34BAB11D3A5DB90080D574 /* InnerFriendsTimeline.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3C34BAAF1D3931780080D574 /* Test.swift in Sources */,
+				3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */,
 				3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

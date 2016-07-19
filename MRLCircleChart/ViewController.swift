@@ -88,7 +88,6 @@ class ViewController: UIViewController {
       tempChart.selectHandler = {
         index in print("selected \(index)")
         
-
         self.sliceSelect(index)
         
       }
@@ -184,7 +183,13 @@ class ViewController: UIViewController {
  
   func sliceSelect(index : Int){
   
-    self.performSegueWithIdentifier("goto", sender: nil)
+//    let layout = UICollectionViewFlowLayout()
+//    let feedController = FeedController(collectionViewLayout : layout)
+//    
+//    navigationController?.pushViewController(CustomTabBarController(), animated: true)
+
+    
+    //self.performSegueWithIdentifier("goto", sender: nil)
 
     
   }
