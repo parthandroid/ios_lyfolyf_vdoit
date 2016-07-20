@@ -52,9 +52,9 @@ class Login: UIViewController {
   
   @IBAction func loginPressed(sender: AnyObject) {
     
+    
     //Do my login here...
     //If login successful:
-    let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     self.dismissViewControllerAnimated(true, completion: nil)
     appDelegate.window?.rootViewController = CustomTabBarController()

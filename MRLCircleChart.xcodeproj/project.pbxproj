@@ -11,6 +11,8 @@
 		3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */; };
 		3C34BAAF1D3931780080D574 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAE1D3931780080D574 /* Test.swift */; };
 		3C34BAB11D3A5DB90080D574 /* InnerFriendsTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */; };
+		3C34BAB51D3E94E10080D574 /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAB41D3E94E00080D574 /* SettingsLauncher.swift */; };
+		3C34BAB71D3EA5850080D574 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAB61D3EA5850080D574 /* SettingCell.swift */; };
 		3C6C4E101D217C330009A444 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C4E0F1D217C330009A444 /* Login.swift */; };
 		3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */; };
 		3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */; };
@@ -42,6 +44,8 @@
 		3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		3C34BAAE1D3931780080D574 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerFriendsTimeline.swift; sourceTree = "<group>"; };
+		3C34BAB41D3E94E00080D574 /* SettingsLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
+		3C34BAB61D3EA5850080D574 /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3C6C4E0F1D217C330009A444 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderDateView.swift; sourceTree = "<group>"; };
@@ -98,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				3CFE8DC01D32142800C02D1F /* MyTimeline.swift */,
-				3C34BAAA1D38017C0080D574 /* InnerCircle.swift */,
 				3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */,
+				3C34BAAA1D38017C0080D574 /* InnerCircle.swift */,
 			);
 			name = TabBarClasses;
 			sourceTree = "<group>";
@@ -119,6 +123,8 @@
 				3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */,
 				3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */,
 				3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */,
+				3C34BAB41D3E94E00080D574 /* SettingsLauncher.swift */,
+				3C34BAB61D3EA5850080D574 /* SettingCell.swift */,
 			);
 			name = CustomClasses;
 			sourceTree = "<group>";
@@ -417,7 +423,9 @@
 				3C6C4E101D217C330009A444 /* Login.swift in Sources */,
 				3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */,
 				3C34BAB11D3A5DB90080D574 /* InnerFriendsTimeline.swift in Sources */,
+				3C34BAB71D3EA5850080D574 /* SettingCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				3C34BAB51D3E94E10080D574 /* SettingsLauncher.swift in Sources */,
 				3C34BAAF1D3931780080D574 /* Test.swift in Sources */,
 				3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */,
 				3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */,

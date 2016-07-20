@@ -54,13 +54,60 @@ class FriendsController: UICollectionViewController , UICollectionViewDelegateFl
     
     setupData()
     
+    setupNavBarButtons()
   }
   
-  internal func returnNavRef() -> UINavigationController {
+  func setupNavBarButtons() {
+    let searchImage = UIImage(named: "search_icon")?.imageWithRenderingMode(.AlwaysOriginal)
+    let searchBarButtonItem = UIBarButtonItem(image: searchImage, style: .Plain, target: self, action: #selector(handleSearch))
     
-    return navigationController!
+    let moreButton = UIBarButtonItem(image: UIImage(named: "nav_more_icon")?.imageWithRenderingMode(.AlwaysOriginal), style: .Plain, target: self, action: #selector(handleMore))
     
+    navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
   }
+  
+  
+  lazy var settingsLauncher: SettingsLauncher = {
+    let launcher = SettingsLauncher()
+    launcher.controller_InnerCircle = self
+    launcher.identifier = "FriendsController"
+    return launcher
+  }()
+  
+  func showControllerForSetting(setting: Setting) {
+    if setting.name == "Logout" {
+      
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      var loginViewController = storyboard.instantiateViewControllerWithIdentifier("login") as! UIViewController
+      let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+      self.dismissViewControllerAnimated(true, completion: nil)
+      appDelegate.window?.rootViewController = loginViewController
+      
+    }
+    else{
+      
+      let dummySettingsViewController = UIViewController()
+      dummySettingsViewController.view.backgroundColor = UIColor.whiteColor()
+      dummySettingsViewController.navigationItem.title = setting.name
+      navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+      navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+      navigationController?.pushViewController(dummySettingsViewController, animated: true)
+      
+    }  }
+  
+  func handleMore() {
+    //show menu
+    settingsLauncher.showSettings()  }
+  
+  func handleSearch() {
+    print(123)
+  }
+  
+//  internal func returnNavRef() -> UINavigationController {
+//    
+//    return navigationController!
+//    
+//  }
   
   
   func setupData(){

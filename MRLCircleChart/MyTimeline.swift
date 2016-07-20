@@ -66,9 +66,7 @@ class FeedController: UICollectionViewController , UICollectionViewDelegateFlowL
     
     floatingActionButon.createFloatingButtons(self)
     
-    //createFloatingButtons()
-    
-    let memoryCapacity = 500 * 1024 * 1024
+        let memoryCapacity = 500 * 1024 * 1024
     let diskCapacity = 500 * 1024 * 1024
     let urlCache = NSURLCache(memoryCapacity: memoryCapacity , diskCapacity: diskCapacity , diskPath: "myDiskPath")
     NSURLCache.setSharedURLCache(urlCache)
@@ -125,7 +123,60 @@ class FeedController: UICollectionViewController , UICollectionViewDelegateFlowL
     
     collectionView?.registerClass(FeedCell.self, forCellWithReuseIdentifier: cellId)
     
+    
+    setupNavBarButtons()
+
+    
   }
+  
+  func setupNavBarButtons() {
+    let searchImage = UIImage(named: "search_icon")?.imageWithRenderingMode(.AlwaysOriginal)
+    let searchBarButtonItem = UIBarButtonItem(image: searchImage, style: .Plain, target: self, action: #selector(handleSearch))
+    
+    let moreButton = UIBarButtonItem(image: UIImage(named: "nav_more_icon")?.imageWithRenderingMode(.AlwaysOriginal), style: .Plain, target: self, action: #selector(handleMore))
+    
+    navigationItem.rightBarButtonItems = [moreButton, searchBarButtonItem]
+  }
+  
+  lazy var settingsLauncher: SettingsLauncher = {
+    let launcher = SettingsLauncher()
+    launcher.controller_FeedController = self
+    launcher.identifier = "FeedController"
+    return launcher
+  }()
+  
+  func showControllerForSetting(setting: Setting) {
+    
+    if setting.name == "Logout" {
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var loginViewController = storyboard.instantiateViewControllerWithIdentifier("login") as! UIViewController
+        let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.dismissViewControllerAnimated(true, completion: nil)
+        appDelegate.window?.rootViewController = loginViewController
+    
+      }
+    else{
+      
+    let dummySettingsViewController = UIViewController()
+    dummySettingsViewController.view.backgroundColor = UIColor.whiteColor()
+    dummySettingsViewController.navigationItem.title = setting.name
+    navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+    navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+    navigationController?.pushViewController(dummySettingsViewController, animated: true)
+  
+    }
+    }
+  
+  func handleMore() {
+    //show menu
+   settingsLauncher.showSettings()  }
+  
+  func handleSearch() {
+    print(123)
+  }
+  
+  
   
   
   override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
