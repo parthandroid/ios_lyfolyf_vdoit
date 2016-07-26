@@ -28,13 +28,22 @@ var floatingActionButton: LiquidFloatingActionButton!
     
     if index == 0{
     
-      FloatingActionButton.ref?.pushViewController(Test(), animated: true)
+      let viewcontroller = ViewController(collectionViewLayout: UICollectionViewFlowLayout())
+      
+      viewcontroller.hidesBottomBarWhenPushed = true
+      
+      
+      FloatingActionButton.ref?.pushViewController(viewcontroller, animated: true)
+      
 
     }
     
     else if index == 1 {
+      
+      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+      var initialViewController = storyboard.instantiateViewControllerWithIdentifier("test") as! UIViewController
     
-      FloatingActionButton.ref?.pushViewController(Test(), animated: true)
+      FloatingActionButton.ref?.pushViewController(initialViewController, animated: true)
 
     
     }

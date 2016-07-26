@@ -7,38 +7,82 @@
 //
 
 import UIKit
+import Charts
 
-class Test: UIViewController {
+class Test: UIViewController , ChartViewDelegate {
+
+//  @IBOutlet var lineChartView: LineChartView!
+//  @IBOutlet var pieChartView: PieChartView!
+    
+    @IBOutlet var pieChartView: PieChartView!
+    
+    @IBOutlet var lineChartView: LineChartView!
+    
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    // Do any additional setup after loading the view.
+    
+    let months = ["red", "green", "yellow"]
+    let unitsSold = [30.0, 30.0, 40.0]
+    
+    setChart(months, values: unitsSold)
 
   
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(animated)
-    
-
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      view.backgroundColor = UIColor.redColor()
-      
-      
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+  
+  
+  func setChart(dataPoints: [String], values: [Double]) {
+    
+    pieChartView.centerText = "Real Happiness"
+    
+//    pieChartView.highlightPerTapEnabled = false
+    
+    var dataEntries: [ChartDataEntry] = []
+    
+    for i in 0..<dataPoints.count {
+      let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+      dataEntries.append(dataEntry)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Units Sold")
+    let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
+    pieChartView.data = pieChartData
+    
+    var colors: [UIColor] = []
+    
+    for i in 0..<dataPoints.count {
+      let red = Double(arc4random_uniform(256))
+      let green = Double(arc4random_uniform(256))
+      let blue = Double(arc4random_uniform(256))
+      
+      let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+      colors.append(color)
     }
-    */
+    
+    pieChartDataSet.colors = colors
+    
 
+    
+    
+    let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Units Sold")
+    let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+    lineChartView.data = lineChartData
+    
+    
+  
+  }
+  
+  func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, dataSetIndex: Int, highlight: ChartHighlight) {
+    
+    
+  }
+  
+  
+  
+  
+  
+  
 }

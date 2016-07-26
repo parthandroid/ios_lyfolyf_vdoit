@@ -1,10 +1,14 @@
 PODS:
   - Canvas (0.1.2)
+  - Charts (2.2.5):
+    - Charts/Core (= 2.2.5)
+  - Charts/Core (2.2.5)
   - LiquidFloatingActionButton (0.1.1)
   - MRLCircleChart (0.3.5)
 
 DEPENDENCIES:
   - Canvas
+  - Charts
   - LiquidFloatingActionButton (from `https://github.com/yoavlt/LiquidFloatingActionButton.git`, branch `swift-2.0`)
   - MRLCircleChart (from `../`)
 
@@ -22,9 +26,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  Charts: b48fcc8d7190de910ff9e9748f5360c8ea7856e5
   LiquidFloatingActionButton: dcdae1e59eb07eccbf60c027001a4d6731c345c9
   MRLCircleChart: 5cba6c79e1f91ec6b472a413bad1fee57ccd7d17
 
-PODFILE CHECKSUM: e4b0392caf397de4e45acd07bb393769a74171a9
+PODFILE CHECKSUM: 37a5880b46fa3a1199c43446c12c6860cc1d6eea
 
 COCOAPODS: 1.0.1

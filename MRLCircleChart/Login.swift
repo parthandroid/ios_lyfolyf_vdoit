@@ -32,6 +32,10 @@ class Login: UIViewController {
   
   override func viewDidLoad() {
   
+    
+    
+   
+    
     username_field.layer.borderWidth = 1.0
     username_field.layer.cornerRadius = 4
     

@@ -29,25 +29,8 @@ class FeedController: UICollectionViewController , UICollectionViewDelegateFlowL
   var posts = [Post]()
   let floatingActionButon = FloatingActionButton()
   
-
   
-  override func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
-    let actualPosition = scrollView.panGestureRecognizer.translationInView(scrollView.superview)
-    if (actualPosition.y > 0){
-      // Dragging down
-      
-      print("down")
-      
-    }else{
-      
-      print("up")
-      // Dragging up
-    }
-  }
-
-  
-  
-    override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
     
     FloatingActionButton.ref = navigationController
@@ -526,12 +509,7 @@ class FeedCell : UICollectionViewCell {
     addConstraintWithFormat("V:[v0(20)]-8-|", views: commentButton)
     
     addConstraintWithFormat("V:|-8-[v0(44)]-4-[v1]-4-[v2(200)]-8-[v3(20)]-8-|", views: profileImageView , statusTextView , statusImageView , beTheFirstComment)
-    
-//    addConstraintWithFormat("V:[v0(20)]-8-|", views: beTheFirstComment)
-  
-    
-    
-    
+   
   }
   
 }

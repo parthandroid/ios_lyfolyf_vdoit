@@ -22,201 +22,201 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import UIKit
-import MRLCircleChart
-
-struct Data {
-  static let maxValue: Double = 100
-  static let values: [Double] = [30,20 ,50]
-  
-  // forcast
-  static let maxValue_forcast: Double = 100
-  static let values_forcast: [Double] = [10, 50, 40]
-  
-  // real
-  static let maxValue_real: Double = 100
-  static let values_real: [Double] = [30, 30, 40]
-  
-  
-  
-}
-
-class DataSource: MRLCircleChart.DataSource {
-  var chartSegments: [MRLCircleChart.Segment]
-  var maxValue: Double
-  
-  init(items: [MRLCircleChart.Segment], maxValue: Double) {
-    self.chartSegments = items
-    self.maxValue = maxValue
-  }
-}
-
-
-
-
-class ViewController: UIViewController {
-  
-  @IBOutlet var chart: MRLCircleChart.Chart?
-  
-  //forcast
-  @IBOutlet var chart_forcast: MRLCircleChart.Chart?
-  
-  //real
-  @IBOutlet var chart_real: MRLCircleChart.Chart?
-
-  
-  var dataSource = DataSource(items: [], maxValue: Data.maxValue)
-  
-  //forcast
-  var dataSource_forcast = DataSource(items: [], maxValue: Data.maxValue)
-  
-  //real
-  var dataSource_real = DataSource(items: [], maxValue: Data.maxValue)
-  
-  
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    setupData()
-    setupData_forcast()
-    setupData_real()
-    
-    if let tempChart = chart {
-      tempChart.dataSource = dataSource
-      tempChart.selectionStyle = .Grow
-      tempChart.selectHandler = {
-        index in print("selected \(index)")
-        
-        self.sliceSelect(index)
-        
-      }
-      
-        func runAfter(time: Double, block: () -> ()) {
-        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
-        dispatch_after(delay, dispatch_get_main_queue(), { 
-          block()
-        })
-      }
-        
-      runAfter(1) {
-        tempChart.reloadData()
-      }
-
-      runAfter(2) {
-        tempChart.select(index: 1)
-      }
-    }
-    
-    
-    //forcast
-    if let tempChart = chart_forcast {
-      tempChart.dataSource = dataSource_forcast
-      tempChart.selectionStyle = .Grow
-      tempChart.selectHandler = {
-        index in print("selected \(index)")
-        
-        
-        //self.sliceSelect(index)
-        
-      }
-      
-      
-      
-      func runAfter(time: Double, block: () -> ()) {
-        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
-        dispatch_after(delay, dispatch_get_main_queue(), {
-          block()
-        })
-      }
-      
-      runAfter(1) {
-        tempChart.reloadData()
-      }
-      
-      runAfter(2) {
-        tempChart.select(index: 1)
-      }
-    }
-
-    
-    //real
-    if let tempChart = chart_real {
-      tempChart.dataSource = dataSource_real
-      tempChart.selectionStyle = .Grow
-      tempChart.selectHandler = {
-        index in print("selected \(index)")
-        
-        
-        //self.sliceSelect(index)
-        
-      }
-      
-      
-      
-      func runAfter(time: Double, block: () -> ()) {
-        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
-        dispatch_after(delay, dispatch_get_main_queue(), {
-          block()
-        })
-      }
-      
-      runAfter(1) {
-        tempChart.reloadData()
-      }
-      
-      runAfter(2) {
-        tempChart.select(index: 1)
-      }
-    }
-
-    
-    
-    
-  }
-  
-  
-  
-  
-  
-  
- 
-  func sliceSelect(index : Int){
-  
-//    let layout = UICollectionViewFlowLayout()
-//    let feedController = FeedController(collectionViewLayout : layout)
+//import UIKit
+//import MRLCircleChart
+//
+//struct Data {
+//  static let maxValue: Double = 100
+//  static let values: [Double] = [30,20 ,50]
+//  
+//  // forcast
+//  static let maxValue_forcast: Double = 100
+//  static let values_forcast: [Double] = [10, 50, 40]
+//  
+//  // real
+//  static let maxValue_real: Double = 100
+//  static let values_real: [Double] = [30, 30, 40]
+//  
+//  
+//  
+//}
+//
+//class DataSource: MRLCircleChart.DataSource {
+//  var chartSegments: [MRLCircleChart.Segment]
+//  var maxValue: Double
+//  
+//  init(items: [MRLCircleChart.Segment], maxValue: Double) {
+//    self.chartSegments = items
+//    self.maxValue = maxValue
+//  }
+//}
+//
+//
+//
+//
+//class ViewController: UIViewController {
+//  
+//  @IBOutlet var chart: MRLCircleChart.Chart?
+//  
+//  //forcast
+//  @IBOutlet var chart_forcast: MRLCircleChart.Chart?
+//  
+//  //real
+//  @IBOutlet var chart_real: MRLCircleChart.Chart?
+//
+//  
+//  var dataSource = DataSource(items: [], maxValue: Data.maxValue)
+//  
+//  //forcast
+//  var dataSource_forcast = DataSource(items: [], maxValue: Data.maxValue)
+//  
+//  //real
+//  var dataSource_real = DataSource(items: [], maxValue: Data.maxValue)
+//  
+//  
+//  
+//  override func viewDidLoad() {
+//    super.viewDidLoad()
 //    
-//    navigationController?.pushViewController(CustomTabBarController(), animated: true)
-
-    
-    //self.performSegueWithIdentifier("goto", sender: nil)
-
-    
-  }
-  
-  
-  private func setupData() {
-    dataSource.chartSegments = Data.values.map { (value: Double) -> MRLCircleChart.Segment in
-      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
-    }.sort { $0 < $1 }
-  }
-  
-  
-  //forcast
-  private func setupData_forcast() {
-    dataSource_forcast.chartSegments = Data.values_forcast.map { (value: Double) -> MRLCircleChart.Segment in
-      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
-      }.sort { $0 < $1 }
-  }
-  
-  //forcast
-  private func setupData_real() {
-    dataSource_real.chartSegments = Data.values_real.map { (value: Double) -> MRLCircleChart.Segment in
-      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
-      }.sort { $0 < $1 }
-  }
-
-  
-  //MARK: - Actions
-  
- }
+//    setupData()
+//    setupData_forcast()
+//    setupData_real()
+//    
+//    if let tempChart = chart {
+//      tempChart.dataSource = dataSource
+//      tempChart.selectionStyle = .Grow
+//      tempChart.selectHandler = {
+//        index in print("selected \(index)")
+//        
+//        self.sliceSelect(index)
+//        
+//      }
+//      
+//        func runAfter(time: Double, block: () -> ()) {
+//        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+//        dispatch_after(delay, dispatch_get_main_queue(), { 
+//          block()
+//        })
+//      }
+//        
+//      runAfter(1) {
+//        tempChart.reloadData()
+//      }
+//
+//      runAfter(2) {
+//        tempChart.select(index: 1)
+//      }
+//    }
+//    
+//    
+//    //forcast
+//    if let tempChart = chart_forcast {
+//      tempChart.dataSource = dataSource_forcast
+//      tempChart.selectionStyle = .Grow
+//      tempChart.selectHandler = {
+//        index in print("selected \(index)")
+//        
+//        
+//        //self.sliceSelect(index)
+//        
+//      }
+//      
+//      
+//      
+//      func runAfter(time: Double, block: () -> ()) {
+//        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+//        dispatch_after(delay, dispatch_get_main_queue(), {
+//          block()
+//        })
+//      }
+//      
+//      runAfter(1) {
+//        tempChart.reloadData()
+//      }
+//      
+//      runAfter(2) {
+//        tempChart.select(index: 1)
+//      }
+//    }
+//
+//    
+//    //real
+//    if let tempChart = chart_real {
+//      tempChart.dataSource = dataSource_real
+//      tempChart.selectionStyle = .Grow
+//      tempChart.selectHandler = {
+//        index in print("selected \(index)")
+//        
+//        
+//        //self.sliceSelect(index)
+//        
+//      }
+//      
+//      
+//      
+//      func runAfter(time: Double, block: () -> ()) {
+//        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+//        dispatch_after(delay, dispatch_get_main_queue(), {
+//          block()
+//        })
+//      }
+//      
+//      runAfter(1) {
+//        tempChart.reloadData()
+//      }
+//      
+//      runAfter(2) {
+//        tempChart.select(index: 1)
+//      }
+//    }
+//
+//    
+//    
+//    
+//  }
+//  
+//  
+//  
+//  
+//  
+//  
+// 
+//  func sliceSelect(index : Int){
+//  
+////    let layout = UICollectionViewFlowLayout()
+////    let feedController = FeedController(collectionViewLayout : layout)
+////    
+////    navigationController?.pushViewController(CustomTabBarController(), animated: true)
+//
+//    
+//    //self.performSegueWithIdentifier("goto", sender: nil)
+//
+//    
+//  }
+//  
+//  
+//  private func setupData() {
+//    dataSource.chartSegments = Data.values.map { (value: Double) -> MRLCircleChart.Segment in
+//      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
+//    }.sort { $0 < $1 }
+//  }
+//  
+//  
+//  //forcast
+//  private func setupData_forcast() {
+//    dataSource_forcast.chartSegments = Data.values_forcast.map { (value: Double) -> MRLCircleChart.Segment in
+//      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
+//      }.sort { $0 < $1 }
+//  }
+//  
+//  //forcast
+//  private func setupData_real() {
+//    dataSource_real.chartSegments = Data.values_real.map { (value: Double) -> MRLCircleChart.Segment in
+//      return MRLCircleChart.Segment(value: value, description: "value: \(value)")
+//      }.sort { $0 < $1 }
+//  }
+//
+//  
+//  //MARK: - Actions
+//  
+// }

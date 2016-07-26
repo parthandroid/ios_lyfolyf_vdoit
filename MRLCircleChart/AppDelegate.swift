@@ -16,12 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+    
+//    let barAppearace = UIBarButtonItem.appearance()
+//    barAppearace.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics:UIBarMetrics.Default)
+    
     UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
     
     
     window?.rootViewController = CustomTabBarController()
-    
     let defaults = NSUserDefaults.standardUserDefaults()
     if defaults.objectForKey("userLoggedIn") == nil{
       showLogin()

@@ -1489,35 +1489,115 @@
                         <outlet property="chart" destination="mDV-Ut-tyj" id="Lhj-Zb-mXB"/>
                         <outlet property="chart_forcast" destination="mR5-JM-cmO" id="fxu-rt-i2T"/>
                         <outlet property="chart_real" destination="Ywv-I7-SzZ" id="nIU-E1-ORC"/>
-                        <segue destination="kXm-7F-hOH" kind="show" identifier="goto" id="l99-zE-7i3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2034" y="283.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="QjZ-yS-AOR">
+        <!--Test-->
+        <scene sceneID="TBT-h0-MNY">
             <objects>
-                <viewController id="kXm-7F-hOH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="test" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0WH-I0-eAL" customClass="Test" customModule="MRLCircleChart_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2T7-CF-2Uf"/>
-                        <viewControllerLayoutGuide type="bottom" id="bZd-uz-rEH"/>
+                        <viewControllerLayoutGuide type="top" id="IBh-Zn-xAQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TbF-J4-s6U"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="M6J-zW-BHi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="rCK-20-ikN">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtD-Ud-lzt" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="njo-tW-1RC"/>
+                                    <constraint firstAttribute="height" constant="292" id="vzS-XJ-G6p"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="njo-tW-1RC"/>
+                                        <exclude reference="vzS-XJ-G6p"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="njo-tW-1RC"/>
+                                        <include reference="vzS-XJ-G6p"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlU-Ju-N02" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="QyC-AD-U3K"/>
+                                    <constraint firstAttribute="width" constant="360" id="Zft-jZ-gyF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QyC-AD-U3K"/>
+                                        <exclude reference="Zft-jZ-gyF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QyC-AD-U3K"/>
+                                        <include reference="Zft-jZ-gyF"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QlU-Ju-N02" firstAttribute="leading" secondItem="rCK-20-ikN" secondAttribute="leadingMargin" id="1mB-nJ-lwR"/>
+                            <constraint firstItem="ZtD-Ud-lzt" firstAttribute="trailing" secondItem="rCK-20-ikN" secondAttribute="trailingMargin" id="BOV-9t-Ayr"/>
+                            <constraint firstItem="QlU-Ju-N02" firstAttribute="trailing" secondItem="rCK-20-ikN" secondAttribute="trailingMargin" id="Ct5-0p-ONd"/>
+                            <constraint firstItem="ZtD-Ud-lzt" firstAttribute="leading" secondItem="rCK-20-ikN" secondAttribute="leadingMargin" id="MTK-Ea-ZNm"/>
+                            <constraint firstItem="ZtD-Ud-lzt" firstAttribute="top" secondItem="IBh-Zn-xAQ" secondAttribute="bottom" constant="40" id="To6-TO-HJ7"/>
+                            <constraint firstItem="QlU-Ju-N02" firstAttribute="top" secondItem="ZtD-Ud-lzt" secondAttribute="bottom" constant="49" id="uL7-Pw-HVO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZtD-Ud-lzt"/>
+                                <exclude reference="QlU-Ju-N02"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BOV-9t-Ayr"/>
+                                <exclude reference="MTK-Ea-ZNm"/>
+                                <exclude reference="To6-TO-HJ7"/>
+                                <exclude reference="1mB-nJ-lwR"/>
+                                <exclude reference="Ct5-0p-ONd"/>
+                                <exclude reference="uL7-Pw-HVO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZtD-Ud-lzt"/>
+                                <include reference="QlU-Ju-N02"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="BOV-9t-Ayr"/>
+                                <include reference="MTK-Ea-ZNm"/>
+                                <include reference="To6-TO-HJ7"/>
+                                <include reference="1mB-nJ-lwR"/>
+                                <include reference="Ct5-0p-ONd"/>
+                                <include reference="uL7-Pw-HVO"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="QlU-Ju-N02" id="tjN-hb-SKE"/>
+                        <outlet property="pieChartView" destination="ZtD-Ud-lzt" id="UFe-Ic-Kcx"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CHn-3V-FC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbf-0M-LEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2824.5" y="283.5"/>
+            <point key="canvasLocation" x="2727" y="84.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="calendar_icon" width="263" height="235"/>
-        <image name="clock" width="2000" height="2000"/>
+        <image name="clock" width="950" height="954"/>
         <image name="green" width="226" height="234"/>
         <image name="red" width="170" height="165"/>
         <image name="yellow" width="232" height="223"/>

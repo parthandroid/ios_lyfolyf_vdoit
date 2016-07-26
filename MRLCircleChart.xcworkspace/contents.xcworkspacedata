@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../../Charts-master 2/Charts/Charts.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MRLCircleChart.xcodeproj">
    </FileRef>
    <FileRef

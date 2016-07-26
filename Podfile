@@ -5,6 +5,7 @@ target 'MRLCircleChart_Example' do
   pod 'MRLCircleChart', path: '../'
   pod 'Canvas'
   pod 'LiquidFloatingActionButton', :git => 'https://github.com/yoavlt/LiquidFloatingActionButton.git', :branch => 'swift-2.0'
+  pod 'Charts'
 end
 
 target 'MRLCircleChart_Tests' do
