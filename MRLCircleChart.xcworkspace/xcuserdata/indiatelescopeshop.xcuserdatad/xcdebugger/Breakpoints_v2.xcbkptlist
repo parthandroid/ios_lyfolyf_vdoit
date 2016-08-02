@@ -41,22 +41,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MRLCircleChart/CustomTabBarController.swift"
-            timestampString = "490440051.96199"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "MRLCircleChart/FeedController.swift"
             timestampString = "490288526.746734"
             startingColumnNumber = "9223372036854775807"
@@ -74,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MRLCircleChart/FloatingActionButton.swift"
-            timestampString = "491045608.418894"
+            timestampString = "491737592.195552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "liquidFloatingActionButton(_:didSelectItemAtIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,27 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MRLCircleChart/FloatingActionButton.swift"
-            timestampString = "490308353.132849"
+            timestampString = "491737592.195552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "FloatingActionButton"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MRLCircleChart/FloatingActionButton.swift"
-            timestampString = "491045608.418894"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "liquidFloatingActionButton(_:didSelectItemAtIndex:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -207,84 +175,6 @@
                   startingLineNumber = "105"
                   endingLineNumber = "105"
                   offsetFromSymbolStart = "144">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MRLCircleChart/Dashboard.swift"
-            timestampString = "491000531.603241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "Data"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "globalinit_33_A2592309212DB8791DC1D29757DB4E8F_func1"
-                  moduleName = "MRLCircleChart_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/Dashboard.swift"
-                  timestampString = "491000540.080397"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MRLCircleChart_Example.Data.maxValue.unsafeMutableAddressor : Swift.Double"
-                  moduleName = "MRLCircleChart_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/Dashboard.swift"
-                  timestampString = "491000540.080576"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static MRLCircleChart_Example.Data.maxValue.getter : Swift.Double"
-                  moduleName = "MRLCircleChart_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/Dashboard.swift"
-                  timestampString = "491000540.0807"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static MRLCircleChart_Example.Data.maxValue.setter : Swift.Double"
-                  moduleName = "MRLCircleChart_Example"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/indiatelescopeshop/Downloads/MRLCircleChart-develop/Example/MRLCircleChart/Dashboard.swift"
-                  timestampString = "491000540.081932"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -727,22 +617,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MRLCircleChart/Test.swift"
-            timestampString = "491052798.472404"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "Test"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../../Charts-master 2/Charts/Classes/Renderers/PieChartRenderer.swift"
             timestampString = "491072634.662964"
             startingColumnNumber = "9223372036854775807"
@@ -840,12 +714,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MRLCircleChart/Test.swift"
-            timestampString = "491153858.395845"
+            timestampString = "491581653.781301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "chartValueSelected(_:entry:dataSetIndex:highlight:)"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "setChart(_:values:H_Constraint:V_Constraint:x_constant:y_constant:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -856,12 +730,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MRLCircleChart/Test.swift"
-            timestampString = "491153868.134228"
+            timestampString = "491581511.740294"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "chartValueSelected(_:entry:dataSetIndex:highlight:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

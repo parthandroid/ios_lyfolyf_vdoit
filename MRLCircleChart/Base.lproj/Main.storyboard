@@ -1504,6 +1504,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TbF-J4-s6U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rCK-20-ikN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtD-Ud-lzt" customClass="PieChartView" customModule="Charts">
@@ -1526,67 +1527,35 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlU-Ju-N02" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="325" id="QyC-AD-U3K"/>
-                                    <constraint firstAttribute="width" constant="360" id="Zft-jZ-gyF"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="QyC-AD-U3K"/>
-                                        <exclude reference="Zft-jZ-gyF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="QyC-AD-U3K"/>
-                                        <include reference="Zft-jZ-gyF"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QlU-Ju-N02" firstAttribute="leading" secondItem="rCK-20-ikN" secondAttribute="leadingMargin" id="1mB-nJ-lwR"/>
                             <constraint firstItem="ZtD-Ud-lzt" firstAttribute="trailing" secondItem="rCK-20-ikN" secondAttribute="trailingMargin" id="BOV-9t-Ayr"/>
-                            <constraint firstItem="QlU-Ju-N02" firstAttribute="trailing" secondItem="rCK-20-ikN" secondAttribute="trailingMargin" id="Ct5-0p-ONd"/>
                             <constraint firstItem="ZtD-Ud-lzt" firstAttribute="leading" secondItem="rCK-20-ikN" secondAttribute="leadingMargin" id="MTK-Ea-ZNm"/>
                             <constraint firstItem="ZtD-Ud-lzt" firstAttribute="top" secondItem="IBh-Zn-xAQ" secondAttribute="bottom" constant="40" id="To6-TO-HJ7"/>
-                            <constraint firstItem="QlU-Ju-N02" firstAttribute="top" secondItem="ZtD-Ud-lzt" secondAttribute="bottom" constant="49" id="uL7-Pw-HVO"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ZtD-Ud-lzt"/>
-                                <exclude reference="QlU-Ju-N02"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="BOV-9t-Ayr"/>
                                 <exclude reference="MTK-Ea-ZNm"/>
                                 <exclude reference="To6-TO-HJ7"/>
-                                <exclude reference="1mB-nJ-lwR"/>
-                                <exclude reference="Ct5-0p-ONd"/>
-                                <exclude reference="uL7-Pw-HVO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ZtD-Ud-lzt"/>
-                                <include reference="QlU-Ju-N02"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="BOV-9t-Ayr"/>
                                 <include reference="MTK-Ea-ZNm"/>
                                 <include reference="To6-TO-HJ7"/>
-                                <include reference="1mB-nJ-lwR"/>
-                                <include reference="Ct5-0p-ONd"/>
-                                <include reference="uL7-Pw-HVO"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="lineChartView" destination="QlU-Ju-N02" id="tjN-hb-SKE"/>
                         <outlet property="pieChartView" destination="ZtD-Ud-lzt" id="UFe-Ic-Kcx"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
+
 
 @UIApplicationMain
 
@@ -25,10 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     window?.rootViewController = CustomTabBarController()
-    let defaults = NSUserDefaults.standardUserDefaults()
-    if defaults.objectForKey("userLoggedIn") == nil{
-      showLogin()
+    
+    let key = Defaults[.login_key]
+    
+    if key == "loggedin" {
+    
+      window?.rootViewController = CustomTabBarController()
+    
     }
+    else {
+      
+    showLogin()
+    
+    }
+    
+    
     
     return true
   }
@@ -43,4 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = loginViewController
   }
   
+}
+
+extension DefaultsKeys {
+  static let login_key = DefaultsKey<String?>("login_key")
+  static let launchCount = DefaultsKey<Int>("launchCount")
 }

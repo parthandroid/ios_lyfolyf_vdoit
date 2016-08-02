@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Charts-master 2/Charts/Charts.xcodeproj">
+      location = "group:../../Charts-master/Charts/Charts.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MRLCircleChart.xcodeproj">

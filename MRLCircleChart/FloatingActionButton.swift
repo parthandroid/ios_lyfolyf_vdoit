@@ -16,11 +16,25 @@ class FloatingActionButton : UIViewController {
 static var ref : UINavigationController?
 
   
-  
 var cells = [LiquidFloatingCell]()
 var floatingActionButton: LiquidFloatingActionButton!
   
   
+  override func viewDidLoad() {
+    
+    floatingActionButton.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
+    
+  }
+  
+  func handlePan(recognizer:UIPanGestureRecognizer) {
+    
+    let translation = recognizer.translationInView(self.view)
+    if let view = recognizer.view {
+      view.center = CGPoint(x:view.center.x + translation.x,
+                            y:view.center.y + translation.y)
+    }
+    recognizer.setTranslation(CGPointZero, inView: self.view)
+  }
   
   
   
@@ -28,7 +42,7 @@ var floatingActionButton: LiquidFloatingActionButton!
     
     if index == 0{
     
-      let viewcontroller = ViewController(collectionViewLayout: UICollectionViewFlowLayout())
+      let viewcontroller = Test(collectionViewLayout: UICollectionViewFlowLayout())
       
       viewcontroller.hidesBottomBarWhenPushed = true
       
@@ -40,26 +54,27 @@ var floatingActionButton: LiquidFloatingActionButton!
     
     else if index == 1 {
       
-      let storyboard = UIStoryboard(name: "Main", bundle: nil)
-      var initialViewController = storyboard.instantiateViewControllerWithIdentifier("test") as! UIViewController
-    
-      FloatingActionButton.ref?.pushViewController(initialViewController, animated: true)
+//      let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//      var initialViewController = storyboard.instantiateViewControllerWithIdentifier("test") as! UIViewController
+//    
+//      FloatingActionButton.ref?.pushViewController(initialViewController, animated: true)
 
     
     }
     
     else if index == 2 {
       
-      FloatingActionButton.ref?.pushViewController(Test(), animated: true)
+//      FloatingActionButton.ref?.pushViewController(Test(), animated: true)
       
       
     }
     
     else if index == 3 {
       
-      FloatingActionButton.ref?.pushViewController(Test(), animated: true)
+    FloatingActionButton.ref?.pushViewController(ClapperBoard(), animated: true)
       
 
+      
       
     }
     

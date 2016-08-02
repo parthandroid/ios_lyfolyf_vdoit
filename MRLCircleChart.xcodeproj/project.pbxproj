@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C119E931D4F50CE004D778A /* ClapperBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C119E921D4F50CE004D778A /* ClapperBoard.swift */; };
 		3C34BAAB1D38017C0080D574 /* InnerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAA1D38017C0080D574 /* InnerCircle.swift */; };
 		3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */; };
 		3C34BAAF1D3931780080D574 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34BAAE1D3931780080D574 /* Test.swift */; };
@@ -17,12 +18,11 @@
 		3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */; };
 		3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */; };
 		3CE959841D3FF70D00EDCC78 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE959831D3FF70D00EDCC78 /* Dashboard.swift */; };
-		3CF558911D47A12500BC21C3 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF558901D47A12500BC21C3 /* DatePickerDialog.swift */; };
+		3CF558931D48B84600BC21C3 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF558921D48B84600BC21C3 /* DatePickerDialog.swift */; };
 		3CFE8DC11D32142800C02D1F /* MyTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE8DC01D32142800C02D1F /* MyTimeline.swift */; };
 		3CFE8DC31D34C66A00C02D1F /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */; };
 		50863DE477E75E1AEC40FD16 /* Pods_MRLCircleChart_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBA082CA3BCFC7A6AAA7A9C /* Pods_MRLCircleChart_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -42,6 +42,7 @@
 /* Begin PBXFileReference section */
 		20176FC6077E2A6D47867179 /* Pods-MRLCircleChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLCircleChart_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRLCircleChart_Example/Pods-MRLCircleChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		36AC3325E3CE16BA50CF76CF /* Pods-MRLCircleChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLCircleChart_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRLCircleChart_Example/Pods-MRLCircleChart_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C119E921D4F50CE004D778A /* ClapperBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClapperBoard.swift; sourceTree = "<group>"; };
 		3C34BAAA1D38017C0080D574 /* InnerCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerCircle.swift; sourceTree = "<group>"; };
 		3C34BAAC1D390A410080D574 /* FloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		3C34BAAE1D3931780080D574 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -52,14 +53,13 @@
 		3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderDateView.swift; sourceTree = "<group>"; };
 		3CE959831D3FF70D00EDCC78 /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		3CF558901D47A12500BC21C3 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerDialog.swift; path = "../../../DatePickerDialog-iOS-Swift-master 2/Demo/PickerDialog/DatePickerDialog.swift"; sourceTree = "<group>"; };
+		3CF558921D48B84600BC21C3 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatePickerDialog.swift; path = "../../../DatePickerDialog-iOS-Swift-master/Demo/PickerDialog/DatePickerDialog.swift"; sourceTree = "<group>"; };
 		3CFE8DC01D32142800C02D1F /* MyTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimeline.swift; sourceTree = "<group>"; };
 		3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		52FB9CBA5AC8C99D4F4C55CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MRLCircleChart_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRLCircleChart_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -108,6 +108,7 @@
 				3CFE8DC01D32142800C02D1F /* MyTimeline.swift */,
 				3C34BAB01D3A5DB90080D574 /* InnerFriendsTimeline.swift */,
 				3C34BAAA1D38017C0080D574 /* InnerCircle.swift */,
+				3C119E921D4F50CE004D778A /* ClapperBoard.swift */,
 			);
 			name = TabBarClasses;
 			sourceTree = "<group>";
@@ -123,7 +124,7 @@
 		3C985BFC1D1EF40900E8541C /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
-				3CF558901D47A12500BC21C3 /* DatePickerDialog.swift */,
+				3CF558921D48B84600BC21C3 /* DatePickerDialog.swift */,
 				3CFE8DC21D34C66A00C02D1F /* CustomTabBarController.swift */,
 				3C97983D1D1EC6FD00D9F566 /* NavigationBar.swift */,
 				3C985BFD1D1EF45D00E8541C /* UnderDateView.swift */,
@@ -173,7 +174,6 @@
 				3C6C4E0E1D217BF30009A444 /* login & signUp */,
 				3C985BFC1D1EF40900E8541C /* CustomClasses */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -431,7 +431,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE959841D3FF70D00EDCC78 /* Dashboard.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				3CFE8DC31D34C66A00C02D1F /* CustomTabBarController.swift in Sources */,
 				3C34BAAB1D38017C0080D574 /* InnerCircle.swift in Sources */,
 				3CFE8DC11D32142800C02D1F /* MyTimeline.swift in Sources */,
@@ -439,11 +438,12 @@
 				3C985BFE1D1EF45D00E8541C /* UnderDateView.swift in Sources */,
 				3C34BAB11D3A5DB90080D574 /* InnerFriendsTimeline.swift in Sources */,
 				3C34BAB71D3EA5850080D574 /* SettingCell.swift in Sources */,
+				3C119E931D4F50CE004D778A /* ClapperBoard.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				3C34BAB51D3E94E10080D574 /* SettingsLauncher.swift in Sources */,
 				3C34BAAF1D3931780080D574 /* Test.swift in Sources */,
 				3C34BAAD1D390A410080D574 /* FloatingActionButton.swift in Sources */,
-				3CF558911D47A12500BC21C3 /* DatePickerDialog.swift in Sources */,
+				3CF558931D48B84600BC21C3 /* DatePickerDialog.swift in Sources */,
 				3C97983E1D1EC6FD00D9F566 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

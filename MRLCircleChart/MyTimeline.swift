@@ -8,6 +8,7 @@
 
 import UIKit
 import LiquidFloatingActionButton
+import SwiftyUserDefaults
 
 let cellId = "cellId"
 
@@ -137,6 +138,9 @@ class FeedController: UICollectionViewController , UICollectionViewDelegateFlowL
         let appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.dismissViewControllerAnimated(true, completion: nil)
         appDelegate.window?.rootViewController = loginViewController
+      
+      Defaults[.login_key] = "notloggedin"
+
     
       }
     else{
